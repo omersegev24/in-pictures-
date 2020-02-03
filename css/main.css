@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+    width: 100px;
+}
+
+.ques-img {
+    border-radius: 10px;
+    height: 150px;
+    width: 170px;
+}
+
+.btn {
+    border-radius: 15px;
+    outline: none;
+    background-color: lavenderblush;
+    padding: 10px 90px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: gray;
+}
+.answers-btn{
+    list-style: none;
+}
+
+.modal {
+    position: absolute;
+    left: 200px;
+    bottom: 50%;
+    width: 50%;
+    background-color: red;
+    border-radius: 3px;
+    padding: 60px;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.modal.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal .reset-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.modal span {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
